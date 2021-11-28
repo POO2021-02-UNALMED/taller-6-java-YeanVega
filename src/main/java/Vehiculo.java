@@ -1,7 +1,7 @@
 package vehiculos;
 
 public class Vehiculo {
-	protected int placa;
+	protected String placa;
 	protected int puertas;
 	protected int velocidadMaxima;
 	protected String nombre;
@@ -11,7 +11,7 @@ public class Vehiculo {
 	protected Fabricante fabricante;
 	private static int vehiculos = 0;
 	
-	public Vehiculo(int placa, int puertas, int velocidadMaxima, String nombre, int precio, float peso, String traccion, Fabricante fabricante) {
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, float peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
 		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
@@ -23,11 +23,11 @@ public class Vehiculo {
 		vehiculos ++;
 	}
 	
-	public int getPlaca() {
+	public String getPlaca() {
 		return placa;
 	}
 	
-	public void setPlaca(int placa) {
+	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
 	
