@@ -30,7 +30,7 @@ public class Fabricante {
 		this.pais = pais;
 	}
 
-	public ArrayList<Fabricante> getFabricantes() {
+	public static ArrayList<Fabricante> getFabricantes() {
 		return fabricantes;
 	}
 

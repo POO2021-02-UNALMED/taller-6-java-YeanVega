@@ -21,6 +21,10 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		vehiculos ++;
+		fabricante.setContador();
+		fabricante.getPais().setContador();
+		Fabricante.getFabricantes().add(fabricante);
+		Pais.getPaises().add(fabricante.getPais());
 	}
 	
 	public String getPlaca() {
